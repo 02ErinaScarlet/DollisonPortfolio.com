@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Image Map</title>
+        <script src="../Scripts/jquery.rwdImageMaps.min.js"></script>
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="preconnect" href="https://fonts,gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;
+    0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <style>
+
+*{
+    padding: 0;
+    margin:0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing:border-box;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(emerald.jpg);
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor:pointer;
+}
+span{
+    color:#059668;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding:10px 25px;
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul lu a:hover{
+    color:#f9004d;
+    transition: .4s;
+}
+.btn{
+    background-color: #07a579;
+    color:white;
+    text-decoration: none;
+    border:2px solid transparent;
+    font-weight:bold;
+    padding:10px 25px;
+    border-radius:30px;
+    transition: transform .4s;;
+}
+.btn:hover{
+ transform: scale(1.2);   
+
+}
+.content{
+    position:absolute;
+    top:50%;
+    left:8%;
+    transform: translateY(-50%);
+}
+h1{
+    color: rgb(0, 0, 0);
+    margin:20px 0px 20px;
+    font-size:75px;
+
+}
+h3{
+    color: rgb(82, 187, 131);
+    font-size: 25px;
+    margin-bottom:20px;
+}
+h4{
+    color:rgba(3, 150, 103, 0.8);
+    letter-spacing: 2px;
+    font-size: 23px;
+
+}
+h5{
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+h6{
+    color:rgb(54, 235, 175);
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 7%;
+    font-family: "Poppins", sans-serif;
+}
+h2{
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: 5px;
+
+    
+}
+.newslatter form{
+    width:380px;
+    max-width: 100%;
+    position: relative;
+}
+.newslatter form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #1c7b57;
+    outline: none;
+    border-radius: 30px;
+}
+.newslatter form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border:none;
+    padding:10px 30px;
+    border-radius:30px;
+    background-color: #0b944b;
+    color: white;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+    top: 6px;
+    right:6px;
+
+}
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+}
+.about img{
+    height: auto;
+    width:430px;
+    position: relative;
+ 
+}
+.about-text{
+width: 550px;
+
+}
+
+.main{
+    width:1130px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h2{
+    color:#f9004d;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    color:white;
+    letter-spacing: 2px;
+    font-size:22px ;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+.about-text p{
+    color:#fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+button{
+    background-color: #08744c;
+    color:white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight:bold; 
+    padding:13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+    
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid #11846f;
+    cursor: pointer;
+
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+        </style>
+
+
+    </head>
+    <body>
+        <div class="hero">
+            <nav>
+                <h2 class="logo">My<span> Portfolio</span></h2>
+                <ul>
+                    <li><a href="imagemap.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <a href="#" class="btn">Subscribe</a>
+            </nav>
+    
+            <div class="content">
+                <h4> Hello, my name is</h4>
+                <h1>Jade Miles O. <span> Dollison</span></h1>
+                <h3>I am 2nd yr BSIT student</h3>
+            
+
+                <div class="newslatter">
+                    <form>
+                        <input type="email" name = "email" id="mail" placeholder="Enter Your Email">
+                    <input type="submit" name ="submit" value="Let's Start"></input>
+                    </form>
+                </div>
+    
+            </div>
+    
+        </div> <section class="about">
+            <div class="main">
+                <img src="demonslayer.jpg" alt="demon slayer" usemap="#area" width="500px"
+                height="450px">
+                <map name="area">
+                 <area shape="rect" coords="29,19,624,1196" href="tanjiro.html" alt="kamado" title="kamado Tanjiro" target="_blank">
+                 <area shape="rect" coords="643,25,1242, 1208"  alt="nezu" href="nezu.html" title="nezuko" target="_blank">
+                </map>
+                
+                <div class="about-text">
+                    <h2>Demon Slayer</h2>
+                    <h5>Tanjiro <span>& Nezuko </span></h5>
+                    <h3>Click nezuko or tanjiro to check their personality</h3>
+                    <p> Tanjiro Kamado is a kind-hearted and intelligent boy who lives with his family in the mountains. He became his family's breadwinner after his father's death, making trips to the nearby village to sell charcoal. Everything changed when he came home one day to discover that his family was attacked and slaughtered by a demon. Tanjiro and his sister Nezuko were the sole survivors of the incident, with Nezuko being transformed into a demon, but still surprisingly showing signs of human emotion and thought. After an encounter with Giyū Tomioka, the Water Hashira of the Demon Slayer Corps, Tanjiro is recruited by Giyū and sent to his retired master Sakonji Urokodaki for training to also become a demon slayer, beginning his quest to help his sister turn into human again and avenge the death of his family.
+ 
+                    </p>
+                   
+                   <button type="button">Check this Story</button>
+                </div>
+              
+            </div>
+            <h6>ITC122 LAB MT 730-9 | LEC F530-730</h6>
+        </section>
+
+    </body>
+  
+</html>
